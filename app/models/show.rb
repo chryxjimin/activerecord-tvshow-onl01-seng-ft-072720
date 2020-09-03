@@ -7,8 +7,8 @@ class Show < ActiveRecord::Base
   end
 
   def Show.most_popular_show
-    self.highest_rating
-    self
+    if self == self.highest_rating
+      self
   end
 
   def self.lowest_rating

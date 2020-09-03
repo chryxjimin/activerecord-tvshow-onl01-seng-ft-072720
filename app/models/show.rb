@@ -28,7 +28,7 @@ class Show < ActiveRecord::Base
   end
 
   def self.shows_by_alphabetical_order
-     Show.all.order(:rating :desc)
+     Show.all.order(:name :desc)
      binding.pry
   end
 end

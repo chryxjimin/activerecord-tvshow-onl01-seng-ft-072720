@@ -29,7 +29,7 @@ class Show < ActiveRecord::Base
 
   def self.shows_by_alphabetical_order
      Show.all.order(:name :desc)
-    # binding.pry
+     binding.pry
   end
 end
 

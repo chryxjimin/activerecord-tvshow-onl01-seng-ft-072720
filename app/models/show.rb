@@ -6,7 +6,7 @@ class Show < ActiveRecord::Base
     self.all.maximum("rating")
   end
 
-  def Show.most_popular_show
+  def self.most_popular_show
     #binding.pry
     Show.where(:rating == highest_rating)
   end

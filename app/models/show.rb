@@ -9,20 +9,20 @@ class Show < ActiveRecord::Base
     self.highest_rating
   end
 
-  def Show.lowest_rating
+  def self.lowest_rating
   end
 
-  def Show.least_popular_show
+  def self.least_popular_show
   end
 
-  def Show.ratings_sum
+  def self.ratings_sum
     self.sum("ratings")
   end
 
-  def Show.popular_shows
+  def self.popular_shows
   end
 
-  def Show.shows_by_alphabetical_order
+  def self.shows_by_alphabetical_order
   end
 end
 

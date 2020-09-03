@@ -28,7 +28,7 @@ class Show < ActiveRecord::Base
   end
 
   def self.shows_by_alphabetical_order
-     Show.all.order("SELECT * FROM shows WHERE name = ?")
+     Show.all.order(:rating :decs)
      binding.pry
   end
 end

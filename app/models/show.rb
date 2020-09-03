@@ -3,7 +3,7 @@ class Show < ActiveRecord::Base
 
   def self.highest_rating
     self.all.maximum(t.integer)
-    #  binding.pry
+     binding.pry
   end
 
   def self.most_popular_show

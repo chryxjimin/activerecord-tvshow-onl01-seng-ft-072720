@@ -32,11 +32,3 @@ class Show < ActiveRecord::Base
     # binding.pry
   end
 end
-
-
-# create_table "shows", force: :cascade do |t|
-#   t.string "name"
-#   t.string "network"
-#   t.string "day"
-#   t.integer "rating"
-#   t.string "season"

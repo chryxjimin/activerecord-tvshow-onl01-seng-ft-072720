@@ -2,11 +2,11 @@ require "pry"
 class Show < ActiveRecord::Base
 
   def self.highest_rating
-    Show.all.maximum("rating")
+    self.all.maximum("rating")
   end
 
   def self.most_popular_show
-    Show.highest_rating
+    self.highest_rating
   end
 
   def Show.lowest_rating

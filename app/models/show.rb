@@ -7,7 +7,7 @@ class Show < ActiveRecord::Base
   end
 
   def Show.most_popular_show
-    binding.pry
+    #binding.pry
     Show.where(:rating => highest_rating)
   end
 

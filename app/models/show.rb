@@ -2,7 +2,7 @@ require "pry"
 class Show < ActiveRecord::Base
 
   def self.highest_rating
-    self.all.maximum(t.integer)
+    self.all.maximum(rating)
      binding.pry
   end
 

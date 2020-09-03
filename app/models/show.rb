@@ -7,7 +7,7 @@ class Show < ActiveRecord::Base
   end
 
   def Show.most_popular_show
-    if self == self.highest_rating
+    if self == Show.highest_rating
       self
       binding.pry
     end

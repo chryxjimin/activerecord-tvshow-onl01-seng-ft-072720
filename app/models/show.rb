@@ -5,24 +5,24 @@ class Show < ActiveRecord::Base
     Show.all.maximum("rating")
   end
 
-  def most_popular_show
+  def Show.most_popular_show
     Show.highest_rating
   end
 
-  def lowest_rating
+  def Show.lowest_rating
   end
 
-  def least_popular_show
+  def Show.least_popular_show
   end
 
-  def ratings_sum
+  def Show.ratings_sum
     self.sum("ratings")
   end
 
-  def popular_shows
+  def Show.popular_shows
   end
 
-  def shows_by_alphabetical_order
+  def Show.shows_by_alphabetical_order
   end
 end
 
